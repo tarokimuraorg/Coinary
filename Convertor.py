@@ -14,16 +14,16 @@ class Convertor:
         if (self.__str_yen == '0'):
             return '000000'
 
-        result = self.convert500Yen()
-        result += self.convert100Yen()
-        result += self.convert50Yen()
-        result += self.convert10Yen()
-        result += self.convert5Yen()
-        result += self.convert1Yen()
+        result = self.__convert500Yen()
+        result += self.__convert100Yen()
+        result += self.__convert50Yen()
+        result += self.__convert10Yen()
+        result += self.__convert5Yen()
+        result += self.__convert1Yen()
 
         return result
 
-    def convert1Yen(self) -> str:
+    def __convert1Yen(self) -> str:
     
         if (len(self.__str_yen) > 0):
 
@@ -43,7 +43,7 @@ class Convertor:
 
         return '0'
 
-    def convert5Yen(self) -> str:
+    def __convert5Yen(self) -> str:
 
         if (len(self.__str_yen) > 0):
 
@@ -59,7 +59,7 @@ class Convertor:
 
         return '0'
 
-    def convert10Yen(self) -> str:
+    def __convert10Yen(self) -> str:
     
         if (len(self.__str_yen) > 1):
 
@@ -79,7 +79,7 @@ class Convertor:
 
         return '0'
 
-    def convert50Yen(self) -> str:
+    def __convert50Yen(self) -> str:
 
         if (len(self.__str_yen) > 1):
 
@@ -95,7 +95,7 @@ class Convertor:
 
         return '0'
 
-    def convert100Yen(self) -> str:
+    def __convert100Yen(self) -> str:
 
         if (len(self.__str_yen) > 2):
         
@@ -115,7 +115,7 @@ class Convertor:
 
         return '0'
     
-    def convert500Yen(self) -> str:
+    def __convert500Yen(self) -> str:
 
         if (len(self.__str_yen) > 2):
         
