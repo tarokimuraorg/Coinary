@@ -2,14 +2,14 @@ class Convertor:
 
     __str_yen = '0'
 
-    def __init__(self, yen) -> None:
+    def __init__(self, yen : int) -> None:
         
         if (yen > 999 or yen < 0):
             return None
 
         self.__str_yen = str(yen)
 
-    def convertAll(self) -> str:
+    def intToCoinary(self) -> str:
 
         if (self.__str_yen == '0'):
             return '000000'
